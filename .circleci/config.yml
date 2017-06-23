@@ -5,6 +5,6 @@ jobs:
     docker:
       - image: ruby:2.4-alpine
     steps:
-      - run: apk add --no-cache --update git ssh
+      - run: apk add --no-cache --update git openssh
       - checkout
       - run: bundle install
