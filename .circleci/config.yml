@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    working_directory: /build
+    docker:
+      - image: ruby:2.4-alpine
+    steps:
+      - checkout
+      - run: bundle install
